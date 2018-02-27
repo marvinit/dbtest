@@ -1,17 +1,18 @@
-[
-    {
-        "id": "1",
-        "name": "martin",
-        "age": "50"
-    },
-    {
-        "id": "2",
-        "name": "alfons",
-        "age": "20"
-    },
-    {
-        "id": "3",
-        "name": "ammi",
-        "age": "15"
-    }
-]
+{"users": [
+        {
+            "id": "1",
+            "name": "martin",
+            "age": "50"
+        },
+        {
+            "id": "2",
+            "name": "alfons",
+            "age": "20"
+        },
+        {
+            "id": "3",
+            "name": "ammi",
+            "age": "15"
+        }
+    ]
+}
