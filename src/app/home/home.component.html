@@ -1,0 +1,23 @@
+<div class="container color-dark">
+  <div class="col">
+    <p>This is the first</p>
+  </div>
+  <div class="col">
+    <p>This is the second  ({{ thingsCount }})</p>
+  </div>
+</div>
+
+<div class="container color-light" >
+  <div class="col">
+    <p class="sm">The form comes here</p>
+<form>
+  <input type="text" class="txt" name="item" placeholder="input text here" [(ngModel)]="thingsInput">
+  <input type="submit" class="btn" value="Add item" (click)="AddThing()">
+</form>
+  </div>
+  <div class="col" [@things]="things.length">
+    <p class="life-container" *ngFor="let thing of things; let i=index" (click)="RemoveThing(i)" >
+      {{thing}}
+    </p>
+  </div>
+</div>
